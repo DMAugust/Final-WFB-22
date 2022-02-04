@@ -1,0 +1,24 @@
+* {
+    width: 0px;
+    height: 0px;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.11);
+}
+
+.HeroImage {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/Images/More-ind.jpg");
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: center;
+}
+
+nav {
+    height: 100px;
+    background-color: black;
+    opacity: .5;
+
+}
