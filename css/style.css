@@ -1,4 +1,4 @@
-* {
+ * {
     width: 0px;
     height: 0px;
 }
@@ -20,5 +20,10 @@ nav {
     height: 100px;
     background-color: black;
     opacity: .5;
+}
 
+
+.doublecolumn {
+    float:left;
+    width: 50%;
 }
