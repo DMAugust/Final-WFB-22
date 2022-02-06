@@ -1,27 +1,64 @@
  * {
-    width: 0px;
-    height: 0px;
+    margin: 0px;
+    padding: 0px;
+
 }
 
 body {
     background-color: rgba(255, 255, 255, 0.11);
 }
 
-.HeroImage {
+.oslogo {
+    float: left;
+}
+
+ul {
+    list-style-type:none;
+    margin: 5px;;
+    padding: 5px;;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    padding:1vw;
+    text-align: center;
+    color: black;
+}
+
+li a {
+    text-decoration:none;
+    color: black;
+    display: block;
+    padding: 2.8vh;
+    font-size: 20px;
+}
+
+li a:hover {
+    color: #004AAD;
+}
+
+/* .hero {
     width: 100vw;
-    height: 100vh;
-    background-image: url("/Images/More-ind.jpg");
+    height: 20vh;
+    background-image: url("/Images/Open\ Source.png");
     background-repeat: no-repeat;
     background-size: 15%;
     background-position: center;
+    display:block;
+} */
+
+/* .title {
+    font-size: 50px;
+    text-align: center;
+    color: #004AAD;
 }
 
-nav {
-    height: 100px;
-    background-color: black;
-    opacity: .5;
-}
-
+.title-container {
+    margin: auto;
+    width: 300px;
+    padding-top: 60%;
+} */
 
 .doublecolumn {
     float:left;
