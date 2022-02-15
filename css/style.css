@@ -1,66 +1,59 @@
  * {
     margin: 0px;
     padding: 0px;
+}
 
+#hidescroll::-webkit-scrollbar {
+    display:none;
+}
+
+div .headerimage {
+    display:block;
+    margin: 10% auto;
 }
 
 body {
-    background-color: rgba(255, 255, 255, 0.11);
-}
+    background-color: black;
+} 
 
-.oslogo {
-    float: left;
+.pill-nav {
+    height: 0px;
+    background-color: black;
+    position:sticky;
+    top: 40%;
+    margin: auto;
 }
 
 ul {
-    list-style-type:none;
-    margin: 5px;;
-    padding: 5px;;
-    overflow: hidden;
+    text-align: center;
 }
 
 li {
-    float: left;
-    padding:1vw;
-    text-align: center;
-    color: black;
+    display: inline-block;
+    width: 220px;
 }
 
-li a {
-    text-decoration:none;
-    color: black;
-    display: block;
-    padding: 2.8vh;
-    font-size: 20px;
-}
+ .pill-nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 38px;
+    border-radius: 5px / 4px; 
+} 
 
-li a:hover {
-    color: #004AAD;
-}
+.pill-nav a:hover {
+    background-color: rgb(7, 7, 7);
+    color: #DB3035;
+} 
 
-/* .hero {
-    width: 100vw;
-    height: 20vh;
-    background-image: url("/Images/Open\ Source.png");
-    background-repeat: no-repeat;
-    background-size: 15%;
-    background-position: center;
-    display:block;
-} */
+.pill-nav a.active {
+    background-color: #DB3035;
+    color: white; 
+} 
 
-/* .title {
-    font-size: 50px;
-    text-align: center;
-    color: #004AAD;
-}
-
-.title-container {
-    margin: auto;
-    width: 300px;
-    padding-top: 60%;
-} */
-
-.doublecolumn {
-    float:left;
-    width: 50%;
+ 
+.footercornerimage {
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
