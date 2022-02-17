@@ -1,28 +1,56 @@
+                                        /* GLOBAL STYLE */
  * {
-    margin: 0px;
-    padding: 0px;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 #hidescroll::-webkit-scrollbar {
     display:none;
 }
 
-div .headerimage {
-    display:block;
-    margin: 10% auto;
+.row:after{
+    content: '';
+    display: table;
+    clear: both;   
 }
 
+.column-half {
+    float: left;
+    width: 50%;
+    padding-top: 200px;
+}
+
+.column-half-footer {
+    float: left;
+    width: 50%;
+}
+
+div {
+    font-family: 'Montserrat', sans-serif;
+}
+/* OTHER FONT FAMILY -> 'Quattrocento', serif;  */
+
+                                        /* HOME HEADER STYLE */
+.headerimage {
+    display:block;
+    margin: 10% auto;
+    padding-left: 5px;
+}
+
+                                        /* BODY STYLE */
 body {
     background-color: black;
 } 
 
-ul {
+                                        /* MAIN NAV STYLE */
+
+.headerul {
     text-align: center;
 }
 
-li {
+.mainlist {
     display: inline-block;
-    width: 220px;
+    width: 210px;
 }
 
 .pill-nav {
@@ -50,15 +78,8 @@ li {
     color: white; 
 } 
 
-.footercornerimage {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-}
-
-
                                         /* CONTACT US PAGE CSS */
-
+__
 .pill-nav-contact{
     height: 50px;
     background-color: black;
@@ -86,24 +107,46 @@ li {
     color: white; 
 } 
 
-                                         /* CONTACT FORM */
+
+
+                                            /* LEFT COLUMN - CONTACT US PAGE  */
+
+.spacingleft {
+    padding-left:20%;
+}
+
+ .leftcolumn {
+    color: white;
+ }
+
+
+                                         /* RIGHT COLUMN - CONTACT FORM - CONTACT US PAGE */
+__
+
+.spacingright {
+    padding-right:10px;
+}
+
+form {
+    margin-right: 50%;
+    border: 1px dashed white;
+    padding: 40px;
+}
 
 input[type=text], select, textarea {
     width: 100%;
-    padding: 15px;
+    padding: 12px;
     border: 4px solid #1b4652;
-    border-radius: 7px;
-    box-sizing: border-box;
+    border-radius: 3px;
     margin-top: 6px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     resize: vertical;
 }
 
 input[type=submit] {
     background-color: #DB3035;
     color: white;
-    padding: 10px 20px;;
-    /* border: none; */ 
+    padding: 10px 20px;
     border-radius: 3px;
     cursor: pointer;
 }
@@ -112,15 +155,42 @@ input[type=submit]:hover {
     background-color: #1a4450;
 }
 
-.contactform {
-    margin: 250px auto;
-    max-width: fit-content;
-    border-radius: 5px;
-    background-color: #2a6a7c;
-    padding: 25px;
+label {
+    display: block;
+    color:white;
+    margin-bottom: 10px;
+} 
+
+.contactheader {
+    color: white;
+} 
+
+
+
+                                         /* FOOTER CSS */
+
+.footer {
+    background-color: rgb(255, 255, 255);
+    margin-top: 15%;
+    height:330px;
 }
 
-label {
-    color:white;
-    padding: 10px;
+.footercornerimage {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+}
+
+.footerlinks a{
+    text-decoration: none;
+}
+
+.footer-ul {
+    display: inline-block;
+    list-style: none;
+    padding: unset;
+}
+
+.footerlinks a {
+    color: #2a6a7c;
 }

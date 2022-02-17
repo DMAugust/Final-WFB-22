@@ -7,59 +7,77 @@
     <title>Paradyme - The Work You Put In Today...</title>
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="icon" type="image/BlackEye-Icon" href="./Images/Favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body id="hidescroll">
         <header>
             <div>
-                    <nav class="pill-nav-contact">
-                        <ul class="contact-ul">
-                            <li class="contact-list"><a href="./ParadymeHomePage.html">Home</a></li>
-                            <li class="contact-list"><a href="./ParadymeStore.html">Store</a></li>
-                            <li class="contact-list"><a href="./Projects.html">Projects</a></li>
-                            <li class="contact-list"><a href="./Our Story.html">Our Story</a></li>
-                            <li class="contact-list"><a class="active" href="./Contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
+                <nav class="pill-nav-contact">
+                    <ul class="headerul">
+                        <li class="mainlist"><a href="./ParadymeHomePage.html">Home</a></li>
+                        <li class="mainlist"><a href="./ParadymeStore.html">Store</a></li>
+                        <li class="mainlist"><a href="./Projects.html">Projects</a></li>
+                        <li class="mainlist"><a href="./Our Story.html">Our Story</a></li>
+                        <li class="mainlist"><a class="active" href="./Contact.html">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
-
-        <hr class="linebreak">
     
     
             <!-- CONTACT US FORM -->
-            <div class="contactform">
-                <form action="action_page.php">
-                    <label for="fname">FIRST NAME</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your First Name">
+            <div class="row">
+                <main>
+                    <div class="column-half leftcolumn spacingleft">
+                        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
 
-                    <label for="lname">LAST NAME</label>
-                    <input type="text" id="lastname" name="lastname" placeholder="Your Last Name">
+                    <div class="contactform column-half spacingright">
+                            <form action="action_page.php">
+                                <h1 class="contactheader">Inquire</h1>
+                                <label for="fname">FIRST NAME</label>
+                                <input type="text" id="fname" name="firstname" placeholder="Your First Name">
 
-                    <label for="country">COUNTRY</label>
-                    <select id="country" name="country">
-                        <option value="United States of America"> United States of America</option>
-                        <option value="Canada">Canada</option>
-                        <option value="Hawaii">Hawaii</option>        
-                    </select>
+                                <label for="lname">LAST NAME</label>
+                                <input type="text" id="lastname" name="lastname" placeholder="Your Last Name">
 
-                    <label for="subject">SUBJECT</label>
-                    <textarea id="subject" name="subject" placeholder="Write your message here.." style="height:200px"></textarea>
+                                <label for="email">EMAIL</label>
+                                <input type="text" id="email" name="email" placeholder="EMAIL">
 
-                    <input type="submit" value="Submit">
+                                <label for="subject">SUBJECT</label>
+                                <textarea id="subject" name="subject" placeholder="Write your message here.." style="height:100px"></textarea>
 
-                </form>
-            </div>
-            <!-- CONTACT US FORM -->
-    <main>
-        <section>
-        </section>       
-    </main>
+                                <input type="submit" value="Submit">
+                            </form>
+                    </div>
+                </main>
+            </div>    
+            
+            <!-- CONTACT US FORM END-->
 
     <footer>
-        <div class="footercornerimage">
-            <img src="./Images/Paradyme-Eye.png" alt="footer image" width="50" height="50">
-        </div>
+            <div class="footer row">
+                <div class="column-half-footer">
+                    <ul class="footer-ul">
+                        <li class="footerlinks"><a href="./ParadymeHomePage.html">Home</a></li>
+                        <li class="footerlinks"><a href="./ParadymeStore.html">Store</a></li>
+                        <li class="footerlinks"><a href="./Projects.html">Projects</a></li>
+                        <li class="footerlinks"><a href="./Our Story.html">Our Story</a></li>
+                        <li class="footerlinks"><a class="active" href="./Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="column-half-footer">
+                    <h2>Paradyme co.</h2>
+                    <a href="mailto:prdmbrand@gmail.com"></a>
+                    
+                </div>
+            </div>
+        <img src="./Images/Paradyme-Eye.png" alt="footer image" width="50" height="50" class="footercornerimage">
     </footer>
 
     
