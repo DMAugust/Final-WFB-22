@@ -1,7 +1,7 @@
                                         /* GLOBAL STYLE */
  * {
     box-sizing: border-box;
-    margin: 0;
+    margin-top: 5px;
 }
 
 #hidescroll::-webkit-scrollbar {
@@ -21,12 +21,18 @@ body {
 .column-half {
     float: left;
     width: 50%;
-    padding-top: 230px;
+    padding-top: 100px;
+}
+
+.column-half-projects{
+    float: left;
+    width: 50%;
+    padding-top: 15%;
 }
 
 .column-half-left {
     float: left;
-    width: 43%;
+    width: 50%;
 }
 
 div , h1{
@@ -36,6 +42,13 @@ div , h1{
 p ,h2,h3,h4,h5, label {
     font-family: 'Quattrocento', serif;
 }  
+
+@media screen and (max-width: 1000px) {
+    .about-us-column {
+      width: 100%;
+      display: block;
+    }
+  }
 
 
 
@@ -88,12 +101,81 @@ p ,h2,h3,h4,h5, label {
 
                                         /* OUR STORY PAGE */
 
+.about-section h1 {
+    padding: 20px;
+}
+
+.about-section {
+    padding: 7% 0 2% 0;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
+
+.about-us-column {
+    float: left;
+    width: 24.8%;
+    padding: 80px 60px;
+}
+
+.card {
+    box-shadow: 0 4px 20px 0 #DB3035;
+  }
+
+.about-us-container {
+    text-align: center;
+    padding: 3.5%;
+    background-color: white;
+}
+
+.about-us-container h2 , p {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.card:hover .image-hover-link {
+    opacity: 0.6;
+}
+
+.image-hover-link {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.contact-devin {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color: #24829c;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    font-size: 20px;
+  }
+  
+  .contact-devin:hover {
+    background-color: #BDBFC1;
+    color: #DB3035;
+  }
+
+                                            /* PRJOECTS PAGE */
+
+.youtube-video {
+    display: block;
+    
+}
 
 
                                             /* LEFT COLUMN - CONTACT US PAGE  */
 
 .spacingleft {
-    padding-left:20%;
+    padding-left:15%;
 }
 
  .leftcolumn {
@@ -137,15 +219,20 @@ p ,h2,h3,h4,h5, label {
 }
 
 .left-column-break {
-    padding-right: 1px;
+    padding-right: 1%;
 }
 
 .LCH {
-    padding: 6% 0px 0px 8%;
+    padding: 6% 0px 0px 12%;
 }
 
 .LCP {
-    padding: 6% 4px 0px 2%;
+
+    padding: 6% 0px 0px 4%;
+}
+
+.googlemap {
+    margin: 7% 0 0 20%;
 }
 
 .pagelinkstyle {
@@ -184,10 +271,6 @@ p ,h2,h3,h4,h5, label {
 
                                          /* RIGHT COLUMN - CONTACT FORM - CONTACT US PAGE */
 
-
-.spacingright {
-    padding-right:60px;
-}
 
 form {
     margin-top: 55px;
@@ -241,11 +324,6 @@ input[type=submit]:hover {
                                          /* FOOTER CSS */
 
                                          
-.footercornerimage {
-    position: fixed;
-    bottom: 0;
-    left: 49.25%;
-}
 
 .footerinfo {
     text-align: center;
@@ -255,13 +333,17 @@ input[type=submit]:hover {
 
 .footerinfohome {
     text-align: center;
-    margin-top:13.3%;
+    margin-top:10.72%;
     position:static;
+    
+}
+
+.footercopyright {
+    margin-bottom: 5px;
 }
 
 .footercopyright , .footersocial , .emailinfo2 {
     font-weight: 200;
-    padding: 3px;
 }
 
 .emailinfo2 {
